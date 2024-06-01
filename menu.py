@@ -3,41 +3,18 @@ import requests
 
 add = QApplication([])
 window = QWidget()
-window.resize(800, 700)
+window.resize(400, 300)
 
-get = QPushButton("Розрахувати")
-menu = QPushButton("Меню")
-line = QLineEdit()
-line2 = QLineEdit()
-line3 = QLineEdit()
-line4 = QLineEdit()
-
+val = QPushButton("Обмін гривень")
+bin = QPushButton("Обмін криптовалют Binance")
+Byb = QPushButton("Обмін криптовалют Bybit")
 
 main_line = QVBoxLayout()
+main_line.addWidget(val)
+main_line.addWidget(bin)
+main_line.addWidget(Byb)
 
-
-main_line.addWidget(line)
-main_line.addWidget(line2)
-main_line.addWidget(line3)
-main_line.addWidget(line4)
-main_line.addWidget(get)
-main_line.addWidget(menu)
-
-
-add.setStyleSheet("""
-        QLineEdit
-        {
-            border-style: inset;
-            border-width: 5px;
-            border-radius: 9px   
-        }
-    """)
-
-
-
-
-
-def func():
+def func(val):
     val = line.text()
     date = line2.text()
     kilka = int(line3.text())
@@ -53,8 +30,6 @@ def func():
     else:
         print(" Ну ти і лох")
 
-
-get.clicked.connect(func)
 window.setLayout(main_line)
 window.show()
 add.exec()
