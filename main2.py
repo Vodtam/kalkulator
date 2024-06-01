@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import *
+from PyQt6.addWidget import *
 import requests
 
 add = QApplication([])
