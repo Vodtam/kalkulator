@@ -1,18 +1,22 @@
 from PyQt5.QtWidgets import *
 import requests
 
+import binancito
+import bybitor
+import main2
+
 add = QApplication([])
 window = QWidget()
 window.resize(400, 300)
 
-val = QPushButton("Обмін гривень")
-bin = QPushButton("Обмін криптовалют Binance")
-Byb = QPushButton("Обмін криптовалют Bybit")
+valbtn = QPushButton("Обмін гривень")
+bino = QPushButton("Обмін криптовалют Binance")
+Bybo = QPushButton("Обмін криптовалют Bybit")
 
 main_line = QVBoxLayout()
-main_line.addWidget(val)
-main_line.addWidget(bin)
-main_line.addWidget(Byb)
+main_line.addWidget(valbtn)
+main_line.addWidget(bino)
+main_line.addWidget(Bybo)
 
 def func(val):
     val = line.text()
@@ -30,6 +34,9 @@ def func(val):
     else:
         print(" Ну ти і лох")
 
+valbtn.clicked.connect(main2.menu_window)
+bino.clicked.connect(binancito.binanco_window)
+Bybo.clicked.connect(bybitor.bybito_window)
 window.setLayout(main_line)
 window.show()
 add.exec()
