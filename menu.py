@@ -13,6 +13,8 @@ valbtn = QPushButton("Обмін гривень")
 bino = QPushButton("Обмін криптовалют Binance")
 Bybo = QPushButton("Обмін криптовалют Bybit")
 
+
+
 main_line = QVBoxLayout()
 main_line.addWidget(valbtn)
 main_line.addWidget(bino)
