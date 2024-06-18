@@ -34,7 +34,7 @@ def func(val):
         print(data)
         line4.setText(str(data[0]["rate"] * kilka))
     else:
-        print(" Ну ти і лох")
+        print(" Ні")
 
 valbtn.clicked.connect(main2.menu_window)
 bino.clicked.connect(binancito.binanco_window)

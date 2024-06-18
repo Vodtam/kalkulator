@@ -1,6 +1,4 @@
 from PyQt5.QtWidgets import *
-import requests
-
 
 
 def bybito_window():

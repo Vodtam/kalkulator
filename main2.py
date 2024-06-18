@@ -51,7 +51,7 @@ def menu_window():
             print(data)
             line4.setText(str(data[0]["rate"] * kilka))
         else:
-            print(" Ну ти і лох")
+            print(" Ні")
 
 
     get.clicked.connect(func)
