@@ -5,7 +5,7 @@ import requests
 
 def menu_window():
     window = QDialog()
-    window.resize(800, 700)
+    window.resize(400, 300)
     get = QPushButton("Розрахувати")
     line = QLineEdit()
     line2 = QLineEdit()
@@ -25,13 +25,30 @@ def menu_window():
 
 
     window.setStyleSheet("""
-            QLineEdit
-            {
-                border-style: inset;
-                border-width: 5px;
-                border-radius: 9px   
-            }
-        """)
+     QLineEdit
+                {
+                    border-style: inset;
+                    border-width: 5px;
+                    border-radius: 9px   
+                }
+                
+                QPushButton
+                {
+                    background-color: #0021c5;  
+                }
+                
+                QLineEdit
+                {
+                    font-size: 35px;  
+                }
+                
+                 QPushButton
+                {
+                    font-size: 35px;  
+                }
+                
+                
+            """)
 
 
 

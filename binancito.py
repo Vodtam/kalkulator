@@ -8,8 +8,10 @@ def binanco_window():
     window.resize(800, 700)
 
 
+    TEC = QLabel("ТЕХНІЧНА ПЕРЕРВА")
+    main_line.addWidget(TEC)
 
-
+    window.setLayout(main_line)
     window.show()
     window.exec()
 

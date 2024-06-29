@@ -21,6 +21,21 @@ main_line.addWidget(bino)
 main_line.addWidget(Bybo)
 
 def func(val):
+    window.setStyleSheet("""
+            QPushButton
+                   {
+                       background-color: #0021c5;  
+                   }
+
+           
+                    QPushButton
+                   {
+                       font-size: 35px;  
+                   }
+
+
+               """)
+
     val = line.text()
     date = line2.text()
     kilka = int(line3.text())
