@@ -21,16 +21,16 @@ main_line.addWidget(bino)
 main_line.addWidget(Bybo)
 
 def func(val):
-    window.setStyleSheet("""
+    app.setStyleSheet("""
             QPushButton
                    {
                        background-color: #0021c5;  
                    }
 
            
-                    QPushButton
+            QPushButton
                    {
-                       font-size: 35px;  
+                       font-size: 55px;  
                    }
 
 
