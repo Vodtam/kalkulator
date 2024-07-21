@@ -20,21 +20,28 @@ main_line.addWidget(valbtn)
 main_line.addWidget(bino)
 main_line.addWidget(Bybo)
 
+window.setStyleSheet("""
+    QPushButton
+               {
+                   border-style: inset;
+                   border-width: 5px;
+                   border-radius: 9px   
+               }
+
+               QPushButton
+               {
+                   background-color: #0021c5;  
+               }
+                QPushButton
+               {
+                   font-size: 35px;  
+               }
+
+
+           """)
+
+
 def func(val):
-    app.setStyleSheet("""
-            QPushButton
-                   {
-                       background-color: #0021c5;  
-                   }
-
-           
-            QPushButton
-                   {
-                       font-size: 55px;  
-                   }
-
-
-               """)
 
     val = line.text()
     date = line2.text()
