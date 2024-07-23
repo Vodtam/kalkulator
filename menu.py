@@ -10,8 +10,8 @@ window = QWidget()
 window.resize(400, 300)
 
 valbtn = QPushButton("Обмін гривень")
-bino = QPushButton("Обмін криптовалют Binance")
-Bybo = QPushButton("Обмін криптовалют Bybit")
+bino = QPushButton("Обмін криптовалют")
+Bybo = QPushButton("Обмін криптовалют")
 
 
 
